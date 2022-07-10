@@ -10,7 +10,6 @@ package algorithm.sort;
 * 이 말은 4번의 분할 과 정렬을 통해 정렬을 할 수 있다는 말이다.
 * 길이가 16인 배열을 4(=log(2)16) 번의 정렬을 수행하기 떄문에 16*log(2)16 의 수행 속도가 나온다.
 * */
-
 public class MergeSort {
      private static final int MAX_LENGTH = 8;
      private static int[] stored = new int[MAX_LENGTH];
@@ -24,6 +23,7 @@ public class MergeSort {
           }
      }
      public static void mergeSort(int a[], int m, int n) {
+          // end index 보다 작거나 같다면 배열의 사이즈가 0, 1 이기 때문에 진행하지 않는다.
           if ( m < n ) {
                int middle = (m+n)/2;
                mergeSort(a, m, middle );
