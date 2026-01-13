@@ -13,7 +13,7 @@ public class BOJ5073 {
             input[1] = sc.nextInt();
             input[2] = sc.nextInt();
             
-            if (input[0]+input[1]+input[2] == 0) break;
+            if (input[0] ==0 && input[1] ==0 && input[2] == 0) break;
 
             Arrays.sort(input);
 
